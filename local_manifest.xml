@@ -33,32 +33,36 @@
   <remote name="melab2"
           fetch="https://gitlab.com/Shas45558"
           revision="pixel"/>
-
+  
+  <remote name="mt6768Team"
+          fetch="https://github.com/6768Team"
+          revision="lineage-20" />
+  
 <!-- Remove some modules -->
   <remove-project name="platform/packages/modules/Bluetooth" />
   <!--remove-project name="vendor_qcom_opensource_commonsys-intf_display"/-->
   
  <!-- Device Trees -->
-  <project path="device/xiaomi/lava" name="device_xiaomi_lava" remote="me" revision="los"/>
+  <project path="device/xiaomi/lava" name="android_device_xiaomi_lava" remote="mt6768Team" />
 
   <!-- Common Trees -->
-  <project path="device/xiaomi/mt6768-common" name="device_xiaomi_mt6768-common" remote="me" revision="13"/>
+  <project path="device/xiaomi/mt6768-common" name="android_device_xiaomi_mt6768-common" remote="mt6768Team" />
 
  <!-- Kernel -->
   <project path="kernel/xiaomi/mt6768" name="kernel_xiaomi_mt6768" remote="pixel-devices" revision="thirteen"/>
 
  <!-- Vendor Trees -->
-  <project path="vendor/xiaomi/lava" name="vendor_xiaomi_lava" remote="pixel-devices-blobs" revision="thirteen"/>
+  <project path="vendor/xiaomi/lava" name="android_vendor_xiaomi_lava" remote="mt6768Team" />
 
  <!-- Extra -->
-  <project path="device/mediatek/sepolicy_vndr" name="device_mediatek_sepolicy_vndr" remote="pixel" revision="thirteen"/>
-  <project path="hardware/mediatek" name="hardware_mediatek" remote="pixel" revision="thirteen"/>
+  <project path="device/mediatek/sepolicy_vndr" name="android_device_mediatek_sepolicy_vndr" remote="mt6768Team" />
+  <project path="hardware/mediatek" name="android_hardware_mediatek" remote="mt6768Team" />
   <!--project path="packages/apps/MtkFMRadio" name="android_packages_apps_MtkFMRadio" remote="me" revision="lineage-20"/-->
-  <project path="packages/apps/GCamGOPrebuilt" name="android_packages_apps_GCamGOPrebuilt" remote="arrow" revision="arrow-13.0"/>
+  <!-project path="packages/apps/GCamGOPrebuilt" name="android_packages_apps_GCamGOPrebuilt" remote="arrow" revision="arrow-13.0"/-->
   <project path="packages/apps/Viper4FX" name="packages_apps_Viper4FX" remote="me" revision="13"/>
 
  <!-- Patch -->
-  <project path="packages/modules/Bluetooth" name="packages_modules_Bluetooth" remote="pixel" revision="thirteen"/>
+  <project path="packages/modules/Bluetooth" name="android_packages_modules_Bluetooth" remote="mt6768Team" />
   <!--project path="vendor/qcom/opensource/commonsys-intf/display" name="android_vendor_qcom_opensource_display-commonsys-intf" remote="los" revision="lineage-20.0"/-->
 
 </manifest>
