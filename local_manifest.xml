@@ -62,7 +62,7 @@
   <!--project path="packages/apps/Viper4FX" name="packages_apps_Viper4FX" remote="me" revision="13"/-->
 
  <!-- Patch -->
-  <project path="packages/modules/Bluetooth" name="packages_modules_Bluetooth" remote="pixel" revision="thirteen"/>
+  <!--project path="packages/modules/Bluetooth" name="packages_modules_Bluetooth" remote="pixel" revision="thirteen"/-->
   <!--project path="vendor/qcom/opensource/commonsys-intf/display" name="android_vendor_qcom_opensource_display-commonsys-intf" remote="los" revision="lineage-20.0"/-->
 
 </manifest>
