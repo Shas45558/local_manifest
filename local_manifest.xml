@@ -39,7 +39,7 @@
           revision="lineage-20" />
   
 <!-- Remove some modules -->
-  <remove-project name="platform/packages/modules/Bluetooth" />
+  <!--remove-project name="platform/packages/modules/Bluetooth" /-->
   <!--remove-project name="vendor_qcom_opensource_commonsys-intf_display"/-->
   
  <!-- Device Trees -->
